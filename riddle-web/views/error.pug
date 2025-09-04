@@ -1,0 +1,17 @@
+//- error.pug
+extends layout
+
+block content
+  h2.error-text Ocorreu um erro!
+
+  if error && error.status
+    p.error-code Código do erro: #{error.status}
+
+  if message
+    p.error-message #{message}
+
+  if error && error.stack
+    pre.error-stack= error.stack
+
+  button(onclick="window.location.href='/riddle'")
+    span Voltar ao início

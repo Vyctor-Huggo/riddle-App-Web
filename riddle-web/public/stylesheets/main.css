@@ -1,0 +1,275 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif; /* Curvilínea, fácil leitura */
+  background-color: #1F2421; /* Fundo escuro principal */
+  color: #DCE1DE; /* Cor de texto clara */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background-color: #216869; /* Verde escuro */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4px solid #49A078; /* Linha de separação destacada */
+  gap: 1rem;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #DCE1DE;
+  font-weight: 700;
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Landing Page */
+section.landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 2rem;
+}
+
+section.landing div.text {
+  flex: 1;
+  text-align: left;
+}
+
+section.landing div.text h2 {
+  font-size: 2rem;
+  color: #DCE1DE;
+  margin-bottom: 1rem;
+}
+
+section.landing div.text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #9CC5A1;
+}
+
+section.landing div.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+section.landing div.image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* CARD */
+.card {
+  background-color: #216869;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(33, 104, 105, 0.5);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(33, 104, 105, 0.7);
+}
+
+.card h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #DCE1DE;
+}
+
+.card img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+/* BUTTON */
+button {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #49A078;
+  color: #DCE1DE;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px #1F2421;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background: rgba(220, 225, 222, 0.3);
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+button:hover::after {
+  height: 100%;
+}
+
+button:hover {
+  background-color: #216869;
+  transform: translateY(-3px);
+  box-shadow: 0 6px #1F2421;
+}
+
+button span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Botão com tamanho fixo */
+button.btn-fixed {
+  width: 180px; /* largura fixa */
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: #49A078;
+  color: #DCE1DE;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px #1F2421;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button.btn-fixed::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background: rgba(220, 225, 222, 0.3);
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+button.btn-fixed:hover::after {
+  height: 100%;
+}
+
+button.btn-fixed:hover {
+  background-color: #216869;
+  transform: translateY(-3px);
+  box-shadow: 0 6px #1F2421;
+}
+
+button.btn-fixed span {
+  position: relative;
+  z-index: 2;
+}
+
+/* IMAGE IN CARD */
+.card img {
+  display: block;
+  margin: 0 auto 1.5rem;
+  border-radius: 8px;
+}
+
+/* RIDDLE PAGE */
+main img {
+  max-width: 300px;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* ERROR PAGE */
+.error-text {
+  color: #49A078;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.error-code {
+  color: #9CC5A1;
+  margin-bottom: 1rem;
+}
+
+pre {
+  background: #1F2421;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  color: #DCE1DE;
+}
+
+/* FOOTER */
+footer {
+  background-color: #216869;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-top: 4px solid #49A078;
+  color: #DCE1DE;
+  font-size: 0.9rem;
+}
+
+.tip {
+  font-size: 0; /* deixa invisível, mas mantém o elemento no DOM */
+  color: #DCE1DE; /* cor padrão caso precise */
+}
+
+/* LOADING DIV EXEMPLO */
+.loader {
+  border: 8px solid #DCE1DE;
+  border-top: 8px solid #49A078;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 2rem auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
