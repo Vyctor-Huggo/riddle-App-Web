@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+
+# Environment files
+.env
+
+# Build / output
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Cache / coverage
+.cache/
+coverage/
+
+# Arquivos temporários do Pug/CSS
+*.pug~
+*.css.map
+
+# Arquivos de imagens temporárias
+*.png~
+*.jpg~
+*.jpeg~
+*.gif~
+*.webp~
+*.ico~
+
+# Lockfile do npm (opcional)
+package-lock.json
