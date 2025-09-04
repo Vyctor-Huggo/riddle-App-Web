@@ -1,23 +1,25 @@
 //- layout.pug
 doctype html
 html(lang="pt-br")
-  head
-    meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    title #{title || "Riddle App"}
-    link(rel="stylesheet", href="/stylesheets/main.css")
-    link(rel="preconnect", href="https://fonts.googleapis.com")
-    link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
-    link(href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title #{title || "Riddle App"}
+        link(rel="stylesheet", href="/stylesheets/main.css")
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet")
+        
+        //- Favicon
+        link(rel="icon", type="image/png", href="https://cdn-icons-png.flaticon.com/512/3062/3062634.png")
+    body
+        header
+            a(href="/") 
+                img(src="https://www.kindpng.com/picc/m/84-846268_formato-png-a-jpg-grupo-pica-pica-transparent.png", alt="Riddle Icon")
+            h1 Nosso Riddle
 
-  body
-    header
-        a(href="/") 
-            img(src="https://www.kindpng.com/picc/m/84-846268_formato-png-a-jpg-grupo-pica-pica-transparent.png", alt="Riddle Icon")
-        h1 Nosso Riddle
+        main
+            block content
 
-    main
-        block content
-
-    footer
-        p #{footerText || "© 2025 Riddle App"}
+        footer
+            p #{footerText || "© 2025 Riddle App"}
