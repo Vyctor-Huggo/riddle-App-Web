@@ -7,7 +7,7 @@ router.get('/01', (req, res) => {
     title: "O Primeiro",
     mainText: "1 wxyz tuv ghi",
     mainImage: "/images/g-o.svg",
-    altMainImg: "Image",
+    altMainImg: "A maneira mais rápida de acabar com uma guerra é perdê-la",
     footerText: "© 2025 Riddle App",
     response: "na pior em paris e londres",
     tip: "dica:",
@@ -37,7 +37,7 @@ router.get('/2', (req, res) => {
     altMainImg: "Oi, tudo bem?",
     mainImage: "/images/1986.png",
     footerText: "© 2025 Riddle App",
-    response: "na pior em paris e londres",
+    response: "inicentes",
     tip: "dica:",
     nextPage: "/riddle/3"
 
